@@ -1,6 +1,6 @@
 # Setups
 
-Initial setups for node and react
+Personal tool to manage cash flow, time, and day to day activites (Under Development)
 
 ## Table of content
 
@@ -55,23 +55,6 @@ REACT_APP_BACKEND_BASE_URL=${URL}
 example (Windows) : `REACT_APP_BACKEND_BASE_URL=http://localhost:${NODE_LOCAL_PORT}`
 
 example (Linux) : `REACT_APP_BACKEND_BASE_URL=http://0.0.0.0:${NODE_LOCAL_PORT}`
-
-- Tools tokens
-
-```env
-ST=${ST_Token}
-IPINFO=${IPINFO_Token}
-SHODAN=${SHODAN_Token}
-ZOOMEEYE=${ZOOMEEYE_Token}
-HUNTER=${HUNTER_Token}
-```
-
-- linkedin credentials
-
-```env
-EMAIL_IN=${email}
-PASS_IN=${pass}
-```
 
 ### Run instructions
 
