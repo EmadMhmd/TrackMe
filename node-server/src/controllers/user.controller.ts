@@ -2,10 +2,10 @@ import { Request, Response } from 'express';
 import userData from '../persistance/dataAccess/user.data';
 
 class UserContoller {
-  saveUser = async (req: Request, res: Response) => {
-    const { body } = req;
+  addUser = async (req: Request, res: Response) => {
+    // const { body } = req;
     try {
-      userData.saveUser(body);
+      userData.addUser(/* body */);
       res.send({
         msg: 'User added successfully',
       });

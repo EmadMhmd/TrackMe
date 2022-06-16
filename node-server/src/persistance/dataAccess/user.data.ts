@@ -1,11 +1,11 @@
-import userModel, { User } from '../../models/mongodb/user.model';
+// import userModel, { User } from '../../models/sql/user.model';
 
 class UserData {
-  saveUser = async (user : User) => {
+  addUser = async (/* user : User */) => {
     try {
       // eslint-disable-next-line new-cap
-      const newUser = new userModel(user);
-      await newUser.save();
+      // const newUser = new userModel(user);
+      // await newUser.save();
       // return this.getEmpByObj(newEmp);
     } catch (e) {
       Object(e).message = 'Fail to save the employee !!';
@@ -13,23 +13,14 @@ class UserData {
     }
   };
 
-  // getEmployeesByOrgId = async (orgId: any) => {
+  // getUserByObj = async (obj: User) => {
   //   try {
-  //     return Emp.find({ orgId });
+  //     return userModel.findOne(obj);
   //   } catch (e) {
-  //     e.message = 'Fail to fetch the employees !!';
+  //     Object(e).message = 'Fail to get required employee !!';
   //     throw e;
   //   }
   // };
-
-  getEmpByObj = async (obj: User) => {
-    try {
-      return userModel.findOne(obj);
-    } catch (e) {
-      Object(e).message = 'Fail to get required employee !!';
-      throw e;
-    }
-  };
 }
 
 export default new UserData();

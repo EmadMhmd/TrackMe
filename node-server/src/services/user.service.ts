@@ -1,10 +1,10 @@
-import { User } from '../models/user.model';
-import userData from '../persistance/user.data';
+// import { User } from '../models/user.model';
+// import userData from '../persistance/user.data';
 
 class UserServices {
-  saveUser = async (user : User) => {
+  addUser = async (/* user : User */) => {
     try {
-      userData.saveUser(user);
+      // userData.saveUser(user);
     } catch (e) {
       throw new Error('Error throwed from strMatching service');
     }

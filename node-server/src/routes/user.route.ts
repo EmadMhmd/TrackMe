@@ -3,7 +3,7 @@ import userController from '../controllers/user.controller';
 
 const router = express.Router();
 
-router.post('/addUser', userController.saveUser); // test add to alias
+router.post('/signup', userController.addUser); // test add to alias
 
 // router.post('/testOcr',ocrController.testOcr);
 
