@@ -1,6 +1,6 @@
-# Setups
+# TrackMe
 
-Personal tool to manage cash flow, time, and day to day activites (Under Development)
+TrackMe is a tool to manage personal cash flow, time, and day to day activites (Under Development)
 
 ## Table of content
 
