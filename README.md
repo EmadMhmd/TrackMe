@@ -16,6 +16,7 @@ TrackMe is a tool to manage personal cash flow, time, and day to day activites (
   - [For production react client](#for-production-react-client)
 - [Architecure section](#architecure)
 - [TODOs](#todos)
+- [CONTRIBUTION](#contribution)
 
 ## Development
 
@@ -223,3 +224,7 @@ docker-compose up -d
 ## TODOs
 
 - [TODOs](./docs/TODOs.md)
+
+## CONTRIBUTION
+
+- [CONTRIBUTION](./docs/CONTRIBUTION.md)
