@@ -1,22 +1,11 @@
-// import supertest from 'supertest';
-// import app from '../../server';
-import Env from '../../config';
+import supertest from 'supertest';
+import app from '../../server';
 
-const {
-  POSTGRES_DATABASE,
-  MONGODB_PASSWORD,
-  MONGODB_DATABASE,
-  SERVER_ENV,
-  MONGODB_HOST,
-  MONGODB_PORT,
-} = Env;
-// const req = supertest(app);
+const req = supertest(app);
 
-describe('Test get endpoint', () => {
+describe('Test the server', () => {
   it('Test endpoint', async () => {
-    // const res = await req.get('api/user/62cadcdc56d7681f78cfa41e');
-    // expect(res.status).toBe(200);
-    console.log(`env vars : ${MONGODB_DATABASE}| ${MONGODB_HOST}|${MONGODB_PASSWORD} | ${MONGODB_PORT}|${SERVER_ENV} |${POSTGRES_DATABASE}`);
-    expect(true).toBe(true);
+    const res = await req.get('/');
+    expect(res.status).toBe(200);
   });
 });
