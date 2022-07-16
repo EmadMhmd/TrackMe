@@ -1,33 +1,35 @@
 # TrackMe
 
-TrackMe is a tool to manage personal cash flow, time, and day to day activites (Under Development)
+TrackMe is a tool to manage personal cash flow, time, and day to day activities (Under Development)
 
 ## Table of content
 
-- [Development section](#development)
-  - [Prerequirements](#prerequirements)
-  - [Configuration](#configuration)
-  - [Run instructions](#run-instructions)
-  - [Helpful tools for development](#helpful-tools-for-development)
-- [Docker instructions section](#docker-instructions)
-  - [For developement node server](#for-developement-node-server)
-  - [For production node server](#for-production-node-server)
-  - [For developement react client](#for-developement-react-client)
-  - [For production react client](#for-production-react-client)
-- [Architecure section](#architecure)
-- [TODOs](#todos)
-- [CONTRIBUTION](#contribution)
+- [TrackMe](#trackme)
+  - [Table of content](#table-of-content)
+  - [Development](#development)
+    - [Prerequisites](#prerequisites)
+    - [Configuration](#configuration)
+    - [Run instructions](#run-instructions)
+    - [Helpful tools for development](#helpful-tools-for-development)
+  - [Docker instructions](#docker-instructions)
+    - [For development node server](#for-development-node-server)
+    - [For production node server](#for-production-node-server)
+    - [For development react client](#for-development-react-client)
+    - [For production react client](#for-production-react-client)
+  - [Architecture](#architecture)
+  - [TODOs](#todos)
+  - [CONTRIBUTION](#contribution)
 
 ## Development
 
-### Prerequirements
+### Prerequisites
 
 - Node.js v16.13.1
 - MongoDB v5.0.8
 
 ### Configuration
 
-Copy example.dev.env to dev.env and adapt you vaiables if needed
+Copy example.dev.env to dev.env and adapt you variables if needed
 
 - Database (MongoDB)
 
@@ -59,11 +61,11 @@ example (Linux) : `REACT_APP_BACKEND_BASE_URL=http://0.0.0.0:${NODE_LOCAL_PORT}`
 
 ### Run instructions
 
-- Install node server dependancies
+- Install node server dependencies
 
 ```sh
 cd server
-npm install
+yarn
 ```
 
 - You need to load env variables for the server from dev.env
@@ -82,14 +84,14 @@ source ../dev.env
 - Run node server
 
 ```sh
-npm start
+yarn start
 ```
 
-- Install react client dependancies
+- Install react client dependencies
 
 ```sh
 cd client
-npm install
+yarn
 ```
 
 - You need to load env variables for the client from dev.env
@@ -108,7 +110,7 @@ source ../dev.env
 - Run react client
 
 ```sh
-npm start
+yarn start
 ```
 
 ### Helpful tools for development
@@ -119,9 +121,9 @@ npm start
 
 ## Docker instructions
 
-### For developement node server
+### For development node server
 
-- Copy example.dev.env to dev.env and adapt you vaiables (See configuraion section)
+- Copy example.dev.env to dev.env and adapt you variables (See configuration section)
 
 - To run the server
 
@@ -139,8 +141,8 @@ docker-compose -f docker-compose.dev.yml --env-file dev.env exec server /bin/bas
 
 ```sh
 cd app
-npm install
-npm start
+yarn
+yarn start
 ```
 
 ### For production node server
@@ -167,9 +169,9 @@ make publish
 docker-compose up -d
 ```
 
-### For developement react client
+### For development react client
 
-- Copy example.dev.env to dev.env and adapt you vaiables (See configuraion section)
+- Copy example.dev.env to dev.env and adapt you variables (See configuration section)
 
 - To run the client (if you didn't run this command before for the server)
 
@@ -187,13 +189,13 @@ docker-compose -f docker-compose.dev.yml --env-file dev.env exec client /bin/bas
 
 ```sh
 cd app
-npm install
-npm start
+yarn
+yarn start
 ```
 
 ### For production react client
 
-- Copy example.env to .env and adapt you vaiables (See configuraion section)
+- Copy example.env to .env and adapt you variables (See configuration section)
 
 - Build image (Go to client directory)
 
@@ -215,11 +217,11 @@ make publish
 docker-compose up -d
 ```
 
-## Architecure
+## Architecture
 
-- [Database-architecure](./docs/database_arch.drawio)
-- [General-architecure](./docs/general_arch.drawio)
-- [Detailsed-architecure](./docs/detailsed_arch.drawio)
+- [Database-architecture](./docs/database_arch.drawio)
+- [General-architecture](./docs/general_arch.drawio)
+- [Detailed-architecture](./docs/detailsed_arch.drawio)
 
 ## TODOs
 
